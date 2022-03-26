@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/node_modules/bpg-boxo-boxo/css/bpg-boxo-boxo.min.css">
+    <title>ავტორიზაცია</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="conatainer">
+            <form action="">
+                <div class="box">
+                    <label class="label-text" for="username">სახელი</label>
+                    <input class="input-class" type="text" name="username" id="username" placeholder="სახელი">
+                </div>
+                <div class="box">
+                    <label class="label-text" for="surname"> გვარი </label>
+                    <input class="input-class" type="text" name="surname" id="surname"  placeholder="გვარი">
+                </div>
+                <div class="box">
+                    <label class="label-text" for="password"> პაროლი</label>
+                    <input class="input-class" type="password" id="password" name="password" placeholder="პაროლი">
+                </div>
+                <!-- აქ გავაკეთე pass box ფლექსისთვის, რომ მქონდეს -->
+                <div class="pass-box">
+                    <div class="box dib">
+                        <input class="chek" type="checkbox" id="save" name="save">
+                        <label for="save">დამახსოვრება</label>
+                   </div>
+                   <div class="box dib">
+                       <a class="rec-password" href="/reset.html">პაროლის აღდენა</a>
+                  </div>
+                </div>
+                    <button class="but">შესვლა</button>
+                <a class="reg-button" href="/registration.html" target="blank">რეგისტრაცია</a>
+            </form> 
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/node_modules/bpg-boxo-boxo/css/bpg-boxo-boxo.min.css">
+    <title>რეგისტრაცია</title>
+</head>
+<body>
+    <!-- <div class="main-container"> -->
+        <div class="conatainer">
+            <form action="">
+                <div class="box">
+                    <label class="label-text" for="firstname">სახელი</label>
+                    <input class="input-class" type="text" name="firstname" id="firstname" placeholder="ჩაწერეთ თქვენი სახელი">
+                </div>
+                <div class="box">
+                    <label class="label-text" for="surname"> გვარი </label>
+                    <input class="input-class" type="text" name="surname" id="surname"  placeholder="ჩაწერეთ თქვენი გვარი">
+                </div>
+                <div class="box">
+                    <label class="label-text" for="mail"> ელ-ფოსტა</label>
+                    <input class="input-class" type="email" name="mail" id="mail" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა">
+                </div>
+                <div class="box">
+                    <label class="label-text" for="birth-date">დაბადების თარიღი</label>
+                    <input class="input-class" type="date" id="birth-date" name="date">
+                </div>
+                <div class="box">
+                    <label class="label-text" for="country"> ქვეყანა</label>
+                    <select class="location" name="country" id="country">
+                        <option value="country" selected>საქართველო</option>
+                        <option>ამერიკა</option>
+                        <option>ინგლისი</option>
+                        <option>იტალია</option>
+                        <option>ესპანეთი</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <div class="dib">
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">კაცი</label>
+                    </div>   
+                    <div class="dib">
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">ქალი</label>
+                    </div>  
+                </div>
+                <div class="box">
+                    <label class="label-text" for="password"> პაროლი</label>
+                    <input class="input-class" type="password" id="password" name="password" placeholder="პაროლი">
+                </div>
+                <div class="box">
+                    <label class="label-text" for="pass-repeat">გაიმეორე პაროლი</label>
+                    <input class="input-class" type="password" id="pass-repeat" name="pass-repeat" placeholder="გაიმეორე პაროლი">
+                </div>
+                <button class="but">რეგისტრაცია</button>
+                <a class="reg-button" href="/auth.html" target="blank">ავტორიზაცია</a>
+            </form> 
+        </div>  
+    </div>
+</body>
+
+</html>

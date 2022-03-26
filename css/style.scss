@@ -1,0 +1,72 @@
+
+@import './config.scss';
+@import './animation.scss';
+@import url("//cdn.web-fonts.ge/fonts/bpg-boxo-boxo/css/bpg-boxo-boxo.min.css");
+@import url("//cdn.web-fonts.ge/fonts/alk-rex-bold/css/alk-rex-bold.min.css");
+
+
+.main-container{
+    @extend %main-container;
+}
+
+.conatainer{
+    @extend %MyContainer;
+    animation: rolling 1s;
+    .but{
+        @extend %MyButton;
+        margin-bottom: 15px;
+    }
+    .pass-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .reg-button{
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        line-height: 30px;
+        color: rgb(51, 80, 177);
+        font-size: 15px;
+        &.reg-button:hover{
+            text-decoration: underline;
+        }
+    }
+    .rec-password{
+        text-decoration: none;
+        margin-left: 15px;
+        font-size: 10px;
+    }
+}
+.rec-password:hover{
+    text-decoration: underline;
+
+}
+.box{
+    margin-bottom: 15px;
+    .label-text {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 12px;
+        font-family: "ALK Rex Bold", sans-serif;
+    }
+    
+    .input-class {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 10px;
+        height: 30px;
+        border-color: red;
+    }
+    .location {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 10px;
+        height: 30px;
+        background-color: white;
+        border: 1px solid black;
+    }
+   
+}

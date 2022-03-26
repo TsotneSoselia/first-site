@@ -1,0 +1,47 @@
+$mycolor: yellow;
+$font: 40px;
+$why: green;
+
+*{
+    box-sizing: border-box;
+}
+*{
+    font-size: 10px;
+}
+*{
+    font-family: "BPG Boxo-Boxo", sans-serif;
+}
+.dib{
+    display: inline-block;
+    vertical-align: center;
+}
+.center{
+    text-align: center;
+}
+
+
+%main-container{
+    max-width: 1900px;
+    width: 100%;
+    height: 1200px;
+}
+
+%MyContainer {
+    width: 300px;
+    border: 1px solid black;
+    padding: 15px;
+    margin-left: 30px;
+    box-sizing: border-box;  
+    background-color: aquamarine;
+}
+
+%MyButton {
+    display: block;
+    width: 100%;
+    background-color: rgb(51, 80, 177);
+    color: white;
+    height: 35px;
+    border: 0;
+    cursor: pointer;
+}
+
