@@ -97,13 +97,15 @@ body {
 }
 
 header {
-  margin: 15px 0 15px 20px;
+  margin: 15px 15px 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: cadetblue;
+  height: 70px;
 }
 
 header img {
@@ -203,5 +205,44 @@ nav a:hover {
   height: 30px;
   background-color: white;
   border: 1px solid black;
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px 15px 0 15px;
+  background-color: cadetblue;
+  height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-box .foot-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-box .foot-box2 a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 15px;
+  color: blue;
+  padding-top: 7px;
+}
+
+.footer-box .foot-box2 a:hover {
+  text-decoration: underline;
+  color: chocolate;
 }
 /*# sourceMappingURL=style.css.map */
