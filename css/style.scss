@@ -8,10 +8,35 @@
 .main-container{
     @extend %main-container;
 }
+header{
+    margin: 15px 0 15px 20px;
+    display: flex;
+    align-items: center;
+    img {
+        height: 45px;
+        width: 45px;
+    }
+}
+nav{
+    width: calc(100% - 45px);
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        margin: 0 15px;
+        color: blue;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: black;
+    }
+}
 
 .conatainer{
     @extend %MyContainer;
     animation: rolling 1s;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
     .but{
         @extend %MyButton;
         margin-bottom: 15px;

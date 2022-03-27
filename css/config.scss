@@ -2,6 +2,11 @@ $mycolor: yellow;
 $font: 40px;
 $why: green;
 
+body{
+    height: 1200px;
+    margin: 0;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -18,19 +23,23 @@ $why: green;
 .center{
     text-align: center;
 }
+.d-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
 
 
 %main-container{
     max-width: 1900px;
     width: 100%;
-    height: 1200px;
 }
 
 %MyContainer {
     width: 300px;
     border: 1px solid black;
     padding: 15px;
-    margin-left: 30px;
     box-sizing: border-box;  
     background-color: aquamarine;
 }

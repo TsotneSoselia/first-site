@@ -1,5 +1,10 @@
 @import url("//cdn.web-fonts.ge/fonts/bpg-boxo-boxo/css/bpg-boxo-boxo.min.css");
 @import url("//cdn.web-fonts.ge/fonts/alk-rex-bold/css/alk-rex-bold.min.css");
+body {
+  height: 1200px;
+  margin: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,17 +27,26 @@
   text-align: center;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .main-container {
   max-width: 1900px;
   width: 100%;
-  height: 1200px;
 }
 
 .conatainer {
   width: 300px;
   border: 1px solid black;
   padding: 15px;
-  margin-left: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: aquamarine;
@@ -82,9 +96,43 @@
   }
 }
 
+header {
+  margin: 15px 0 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  height: 45px;
+  width: 45px;
+}
+
+nav {
+  width: calc(100% - 45px);
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 15px;
+  color: blue;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 .conatainer {
   -webkit-animation: rolling 1s;
           animation: rolling 1s;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .conatainer .but {
