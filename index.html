@@ -5,15 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="/auth.html">
-    <link rel="stylesheet" href="/registration.html">
-    <link rel="stylesheet" href="/reset.html">
     <link rel="stylesheet" href="/node_modules/bpg-boxo-boxo/css/bpg-boxo-boxo.min.css">
-    <title>scss</title>
+    <title>ავტორიზაცია</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="conatainer">
+        <header>
+            <a href="">
+                    <img src="image/logo.png" alt="logo image">
+                </a>
+            <nav class="d-flex">
+                
+                <div>
+                    <a href="#">სიახლე</a>
+                    <a href="#">მთავარი</a>
+                    <a href="#">კონტაქტი</a>
+                    <a href="#">ბლოგი</a>
+                </div>
+                <div>
+                    <a href="/registration.html">რეგისტრაცია</a>
+                    <a href="/auth.html">შესვლა</a>
+                </div>   
+            </nav>
+         </header>
+    </div>
+    
+    <div class="main-container">
+        <div class="conatainer body-container">
             <form action="">
                 <div class="box">
                     <label class="label-text" for="username">სახელი</label>
@@ -27,22 +45,79 @@
                     <label class="label-text" for="password"> პაროლი</label>
                     <input class="input-class" type="password" id="password" name="password" placeholder="პაროლი">
                 </div>
-                <div class="box">
-                     <input class="chek" type="checkbox" id="save" name="save">
-                     <label for="save">დამახსოვრება</label>
+                <!-- აქ გავაკეთე pass box ფლექსისთვის, რომ მქონდეს -->
+                <div class="pass-box">
+                    <div class="box dib">
+                        <input class="chek" type="checkbox" id="save" name="save">
+                        <label for="save">დამახსოვრება</label>
+                   </div>
+                   <div class="box dib">
+                       <a class="rec-password" href="/reset.html">პაროლის აღდენა</a>
+                  </div>
                 </div>
-                <button class="but">შესვლა</button>
-                <a class="pass-recover" href="#"> პაროლის აღდგენა</a>
+                    <button class="but">შესვლა</button>
+                <a class="reg-button" href="/registration.html" target="blank">რეგისტრაცია</a>
             </form> 
         </div>
-        
-        
     </div>
-       
-            
-        
+    <div class="main-container">
+        <section class="section1">
+            <div class="section-box">
+                <h1>მარტვილი - სამეგრელოს მშვენება</h1>
+                <div class="section-box-child">
+                    <img src="/image/martvili.jpg" alt="matvili photo">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dignissimos aliquid sunt vel
+                        tempora consequuntur doloremque impedit animi ipsa corrupti!</p>
+                </div>
+                <a href="#"><span>more</span></a>
+            </div>
+            <div class="section-box">
+                <h1>ბათუმი - ზღვა და სილამაზე</h1>
+                <div class="section-box-child">
+                    <img src="/image/batumi.jpg" alt="batumi photo">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dignissimos aliquid sunt vel
+                         tempora consequuntur doloremque impedit animi ipsa corrupti!</p> 
+                </div>
+                <a href="#"><span>more</span></a>
+                
+            </div>
+            <div class="section-box">
+                <h1>საქართველოს გული</h1>
+                <div class="section-box-child">
+                    <img src="/image/Tbilisi.jpg" alt="batumi photo">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dignissimos aliquid sunt vel
+                        tempora consequuntur doloremque impedit animi ipsa corrupti!</p> 
+                </div>  
+                <a href="#"><span>more</span></a>
+            </div>
+        </section>
+    </div>
 
-
+   <footer>
+    <div class="main-conatainer">
+        <div class="footer-box">
+            <div class="foot-box2">
+                <a href="">საიტები</a>
+                <a href="">გართობა</a>
+                <a href="">შემეცნებითი</a>
+                <a href="">სხვა</a>
+            </div>
+            <div class="foot-box2">
+                <a href="">სკოლა</a>
+                <a href="">უნივერსიტეტი</a>
+                <a href="">კოლეჯი</a>
+                <a href="">უცხოეთში სწავლა</a>
+            </div>
+            <div class="foot-box2">
+                <a href="https://tbilisi.gov.ge/pages/history" target="blank">თბილისი</a>
+                <a href="http://kutaisi.gov.ge/" target="blank">ქუთაისი</a>
+                <a href="https://batumi.ge/ge/" target="blank">ბათუმი</a>
+                <a href="https://ka.wikipedia.org/wiki/%E1%83%9B%E1%83%90%E1%83%A0%E1%83%A2%E1%83%95%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1_%E1%83%9B%E1%83%A3%E1%83%9C%E1%83%98%E1%83%AA%E1%83%98%E1%83%9E%E1%83%90%E1%83%9A%E1%83%98%E1%83%A2%E1%83%94%E1%83%A2%E1%83%98" target="blank">მარტვილი</a>
+            </div>
+        </div>
+</div>
+   </footer> 
+    
 
 </body>
 
